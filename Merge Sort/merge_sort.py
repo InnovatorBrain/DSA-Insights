@@ -65,3 +65,19 @@ def merge_sort(values):
     """All the numbers from both halves should now be copied to the sorted list,
     so we can return it."""
     return sorted_values
+
+
+def varify(lst):
+    n = len(lst)
+
+    if n == 0 or n == 1:
+        return True
+
+    return lst[0] < lst[1] and varify(lst[1:])
+
+
+a = [8, 5, 9, 1, 3, 7]
+sorted = merge_sort(a)
+print(varify(sorted))
+b = [1, 5, 8, 9, 4, 6]
+print(varify(b))
