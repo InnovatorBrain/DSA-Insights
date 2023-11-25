@@ -78,6 +78,5 @@ def varify(lst):
 
 a = [8, 5, 9, 1, 3, 7]
 sorted = merge_sort(a)
-print(varify(sorted))
-b = [1, 5, 8, 9, 4, 6]
-print(varify(b))
+print(sorted)
+
